@@ -1,0 +1,65 @@
+.container {
+  padding: var(--size-fluid-5);
+}
+
+.banner {
+  animation: var(--animation-shake-y);
+  background: var(--gradient-2);
+  border-radius: var(--radius-2);
+  box-shadow: var(--shadow-4);
+  margin-block-start: var(--size-4);
+  padding: var(--size-2) var(--size-4);
+  text-shadow: 1px 1px 0 var(--gray-9);
+  -webkit-mask: var(--mask-edge-zig-zag-right);
+}
+
+.table {
+  display: grid;
+  gap: var(--size-4);
+  margin-top: var(--size-6);
+}
+
+.card {
+  align-items: center;
+  animation: var(--animation-slide-in-right), var(--animation-fade-in) forwards;
+  animation-delay: calc(var(--_delay) * 100ms);
+  animation-timing-function: var(--ease-squish-1);
+  background: var(--surface-2);
+  border-radius: var(--radius-conditional-2);
+  box-shadow: var(--shadow-2);
+  display: flex;
+  gap: var(--size-4);
+  opacity: 0;
+  padding: var(--size-2) var(--size-4);
+}
+
+.card date {
+  color: var(--text-2);
+}
+
+.card img {
+  aspect-ratio: var(--ratio-box);
+  border-radius: var(--radius-round);
+  width: var(--size-7);
+}
+
+.guest {
+  align-items: center;
+  display: flex;
+  flex-shrink: 0;
+  gap: var(--size-2);
+}
+
+.form {
+  display: grid;
+  gap: var(--size-2);
+  margin-block: var(--size-fluid-5);
+}
+
+.form label span {
+  display: block;
+}
+
+.form input {
+  width: 100%;
+}
